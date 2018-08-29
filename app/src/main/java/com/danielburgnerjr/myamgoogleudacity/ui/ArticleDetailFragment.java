@@ -111,7 +111,7 @@ public class ArticleDetailFragment extends Fragment implements
     @NonNull
     @Override
     public Loader<Cursor> onCreateLoader(int i, Bundle bundle) {
-        return ArticleLoader.newInstanceForItemId(getActivity(), mItemId);
+        return ArticleLoader.newInstanceForItemId(getActivity(), mItemId); // error: incompatible types: ArticleLoader cannot be converted to Loader<Cursor>
     }
 
     @Override

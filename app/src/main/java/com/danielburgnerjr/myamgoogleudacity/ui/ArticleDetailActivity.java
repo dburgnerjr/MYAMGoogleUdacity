@@ -125,7 +125,7 @@ public class ArticleDetailActivity extends AppCompatActivity
     @NonNull
     @Override
     public Loader<Cursor> onCreateLoader(int i, Bundle bundle) {
-        return ArticleLoader.newAllArticlesInstance(this);
+        return ArticleLoader.newAllArticlesInstance(this);  // error: incompatible types: ArticleLoader cannot be converted to Loader<Cursor>
     }
 
 

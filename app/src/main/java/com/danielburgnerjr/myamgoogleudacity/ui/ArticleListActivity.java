@@ -145,7 +145,7 @@ public class ArticleListActivity extends AppCompatActivity implements
     @NonNull
     @Override
     public Loader<Cursor> onCreateLoader(int id, @Nullable Bundle args) {
-        return ArticleLoader.newAllArticlesInstance(this);
+        return ArticleLoader.newAllArticlesInstance(this);  // error: incompatible types: ArticleLoader cannot be converted to Loader<Cursor>
 
     }
 
